@@ -1,0 +1,137 @@
+body{
+    border: 1px solid rgb(104, 19, 19);
+    
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+.clearfix{
+    content: "";
+    clear: both;
+    overflow: auto;
+}
+
+
+.left{
+    width: 53%;
+    height: 550px;
+    float: left;
+    background-image: url(../img/bg_tweet.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.solimg{
+    width: 250px;
+    height: 250px;
+}
+
+.sagimg{
+    width: 45px;
+}
+
+.right{
+    border: 1px solid red;
+    width: 47%;
+    float: right;
+    padding: 45px;
+    height: 550px;
+}
+
+.s{
+    box-sizing: border-box;
+    
+}
+
+h1{
+    font-size: 62px;
+    font-family:  Arial;
+    font-weight: bold;
+    margin-top: 45px;
+}
+h2{
+    font-size: 35px;
+    font-family:  Arial;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.enter{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    width: 370px;
+    height: 50px;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.a1:hover{
+    background-color: rgb(6, 153, 211);
+    transition: 0.5s;
+}
+.a2:hover{
+    background-color: rgb(236, 240, 240);
+    transition: 0.5s;
+}
+.a1{
+    color: white;
+    background-color: rgb(0,172,238);
+}
+
+.a2{
+    border: 1px solid rgb(0,172,238);
+    color: rgb(0,172,238);
+}
+
+
+
+
+@media screen and (max-width:1000px) and (min-width:500px){
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%;
+        
+    }
+    .right{
+        width: 100%;
+        
+        background-color: aqua;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%;
+        
+    }
+    .right{
+        width: 100%;
+        
+        background-color: rgb(4, 22, 22);
+    }
+}
